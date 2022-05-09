@@ -1,23 +1,19 @@
-console.log('this is working')
+
 
 // Variables
 // initial pull for MVP urlAll.  Make unique pulls for each other url after MVP.  Maybe use all for a 'you search component' after MVP and styling is done.
 // const urlAll = "https://botw-compendium.herokuapp.com/api/v2/all";
 // use these after MVP to have each korok find a specific thing
 const categoryUrl = "https://botw-compendium.herokuapp.com/api/v2/category/";
-// const urlMonsters = "https://botw-compendium.herokuapp.com/api/v2/category/monsters";
-// const urlEquipment = "https://botw-compendium.herokuapp.com/api/v2/category/equipment";
-// const urlCreatures = "https://botw-compendium.herokuapp.com/api/v2/category/creatures";
-// const urlMaterials = "https://botw-compendium.herokuapp.com/api/v2/category/materials";
-// const urlTreasure = "https://botw-compendium.herokuapp.com/api/v2/category/treasure";
+
 
 // This map assigns Koroks from html div .korok to a specific catergory.  We will use above array to 
 const korokMap = {
     'korok1': 'monsters',
     'korok2': 'equipment',
     'korok3': 'materials',
-    'korok4': 'treature',
-    // 'korok5': 'creatures',
+    'korok4': 'treasure',
+    // 'korok5': 'creatures', this has two sub objects of edible and non-edible
 }
 
 // Element Ids
@@ -29,22 +25,23 @@ const descriptionEl = $('#descriptionValue');
 // Functions
 
 function getData(category) {
-    $.ajax(categoryUrl +category).then(
+    $.ajax(categoryUrl + category).then(
         // res is response from API
         (res) => {
-            console.log('yahahaha');
+            // specifically grabs the data objects from the array of objects in API
             const things = res.data;
+            // this only igves the index number of the random thing
             const randomIndex = Math.floor(Math.random()*things.length);
             const randomThing = things[randomIndex];
             console.log(randomThing)
             nameEl.text(randomThing.name);
             categoryEl.text(randomThing.category);
-            // because this is so long, I need to trouble shoot text wrapping.
+            // because this is so long, I need to trouble shoot text wrapping overflow options.
             descriptionEl.text(randomThing.description);
             // make sure to empty the image for each Korok click
             $('#appendImg').empty();
             // $('main').append(`<img src="${data.Poster}"/>`)
-            $('#appendImg').append(`<img src="${randomThing.image}" alt="${randomThing.name}"></img>`)
+            $('#appendImg').append(`<img id="thingImg" src="${randomThing.image}" alt="${randomThing.name}"></img>`)
 
 
         }
@@ -58,7 +55,6 @@ function getData(category) {
 
 // This piece gets category based on the korok that was clicked
 $('div.korok').on('click', (event) => {
-    // this will be relevant if I do a userInput search. DID
     // event.preventDefault() DID
     // Get korok's element id DID
     const id = event.target.id;

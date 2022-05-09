@@ -1,11 +1,15 @@
-html {
+html, body {
     height: 100%;
+    width: 100%;
 }
 body {
     background-color: rgb(77, 110, 77);
-    height: 100%;
     display: flex;
     flex-direction: column;
+    border: 5 px solid black;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
 }
 
 header {
@@ -21,11 +25,26 @@ main {
     position:absolute;
     right: 0;
     bottom: 0;
+    width: 25%;
 }
 
 .korok {
-    background: red;
+    background: rgb(87, 88, 56);
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
 }
+#korok1 {}
+#korok2 {}
+#korok3 {}
+#korok4 {}
+/* #korok5 {} */
+
+#thingImg {
+    height:120px;
+    border-radius: 5px;
+    border: 1px solid white;
+    
+}
+
+@media screen and (orientation: landscape)
