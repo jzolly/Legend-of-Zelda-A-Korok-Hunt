@@ -1,8 +1,18 @@
+/* 
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;  */
+
 html, body {
     height: 100%;
     width: 100%;
 }
 body {
+    background-image: url('https://switchrpg.com/images/articles/botw/botw01.jpg');
+    background-repeat: no-repeat;
+    background-size: 1200px 790px;
+    background-position: center;
     background-color: rgb(77, 110, 77);
     display: flex;
     flex-direction: column;
@@ -22,29 +32,94 @@ main {
 }
 
 #compendiumData {
-    position:absolute;
+    position:relative;
     right: 0;
     bottom: 0;
-    width: 25%;
+    width: 75%;
+    margin: 0;
+    background-color: rgba(255, 235, 205, 0.6);
+    border-radius: 5px;
+    
+    
 }
-
-.korok {
-    background: rgb(87, 88, 56);
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
+#yahaha {
+    text-align: center;
+    font-size: 20px;
 }
-#korok1 {}
-#korok2 {}
-#korok3 {}
-#korok4 {}
-/* #korok5 {} */
-
+.dataHead {
+    margin: 0;
+    opacity:0.75;
+}
 #thingImg {
     height:120px;
     border-radius: 5px;
     border: 1px solid white;
     
+    
 }
+#appendImg {
+    
+}
+.korok {
+    /* background: rgb(87, 88, 56); */
+    width: 100px;
+    height: 150px;
+    margin-bottom: 0;
+}
+#korok1 {
+    background-image: url('https://cdn.staticneo.com/w/zelda/Hollo.png');
+    background-size:150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#korok2 {
+    background-image:url('https://cdn.staticneo.com/w/zelda/Aldo.png');
+    background-size: 85px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#korok3 {
+    background-image: url('https://cdn.staticneo.com/w/zelda/Irch.png');
+    background-size:px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#korok4 {
+    background-image: url('https://cdn.staticneo.com/w/zelda/Olivio.png');
+    background-size:100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* #korok5 {} */
 
-/* @media screen and (orientation: landscape) */
+
+@media screen and (max-width: 768px){
+    html, body {
+
+    }
+    .korok {
+        width: 25%;
+        margin-bottom: 0;  
+    }
+    .mobile {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    #title {
+
+    }
+    #compendiumData {
+        width: 90%;
+        
+
+    }
+    #mobileFlexData {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+}
