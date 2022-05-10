@@ -17,6 +17,7 @@ const korokMap = {
 }
 
 // Element Ids
+const compendiumEl = $('#compendiumData');
 const nameEl = $('#nameValue');
 const categoryEl = $('#categoryValue');
 const descriptionEl = $('#descriptionValue');
@@ -59,6 +60,14 @@ $('div.korok').on('click', (event) => {
     // Get korok's element id DID
     const id = event.target.id;
     console.log(id);
+
+    // I'm playing with the idea of having the compendium data appear beside the korok found.  I may just leave it at the bottom of the screen, esp for @media 
+    // Get position of korok from event target
+    // console.log(event.clientX, event.clientY);
+    // console.log(event.offset);
+    // compendiumEl.css('top', event.clientY);
+    // compendiumEl.css('left', event.clientX);
+
     // get category based on korok
     // this variable (below) accesses the korokMap object via id (triggered by element onclick) and gives us the valuem(category) of that korok for url.
     const category = korokMap[id];

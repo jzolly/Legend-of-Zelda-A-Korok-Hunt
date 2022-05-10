@@ -8,14 +8,12 @@ html, body {
     height: 100%;
     width: 100%;
 }
+* {
+    box-sizing: border-box;
+}
 body {
-    background-image: url('https://switchrpg.com/images/articles/botw/botw01.jpg');
-    background-repeat: no-repeat;
-    background-size: 1200px 790px;
-    background-position: center;
+    margin: 0;
     background-color: rgb(77, 110, 77);
-    display: flex;
-    flex-direction: column;
     border: 5 px solid black;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -23,18 +21,43 @@ body {
 }
 
 header {
-    flex: 0 1 auto;
+    position: absolute;
+    left:0;
+    right:0;
+    text-align:center;
+    z-index: 1;
 }
 
 main {
     position: relative;
-    flex: 1 0 auto;
+}
+
+#how-to {
+    position:absolute;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+    z-index: 1;
+    background: white;
+    width: 300px;
+    height: 300px;
+    padding: 16px;
+    visibility: hidden;
+}
+
+.game {
+     /* calc() was shown to me by a friend, I still need to una */
+    width: calc(100% - 32px);
+    height: calc(100vh - 32px);
+    position: relative;
+    overflow: scroll;
+    max-width: 1200px;
+    margin: 16px;
 }
 
 #compendiumData {
-    position:relative;
-    right: 0;
-    bottom: 0;
+    position:absolute;
+    /* right: 0;
+    bottom: 0; */
     width: 75%;
     margin: 0;
     background-color: rgba(255, 235, 205, 0.6);
@@ -58,49 +81,61 @@ main {
     
 }
 #appendImg {
-    
+    float:right;
 }
 .korok {
-    /* background: rgb(87, 88, 56); */
+    position: absolute;
     width: 100px;
     height: 150px;
-    margin-bottom: 0;
+    top: 0;
 }
 #korok1 {
     background-image: url('https://cdn.staticneo.com/w/zelda/Hollo.png');
-    background-size:150px;
+    background-size:175px;
     background-repeat: no-repeat;
     background-position: center;
-    
+    top: 705px;
+    left: 790px;
 }
 #korok2 {
     background-image:url('https://cdn.staticneo.com/w/zelda/Aldo.png');
-    background-size: 85px;
+    background-size: 70px;
     background-repeat: no-repeat;
     background-position: center;
+    top:400px;
+    left:1700px;
 }
 #korok3 {
     background-image: url('https://cdn.staticneo.com/w/zelda/Irch.png');
     background-size:px;
     background-repeat: no-repeat;
     background-position: center;
+    top: 700px;
+    left: 200px;
 }
 #korok4 {
     background-image: url('https://cdn.staticneo.com/w/zelda/Olivio.png');
     background-size:100px;
     background-repeat: no-repeat;
     background-position: center;
+    top:;
+    left:;
 }
-/* #korok5 {} */
+#korok5 {
+    background-image: url('https://cdn.staticneo.com/w/zelda/Rown.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
     html, body {
 
     }
     .korok {
-        width: 25%;
-        margin-bottom: 0;  
+        /* width: 25%; */
+        /* margin-bottom: 0;   */
     }
     .mobile {
         display: flex;
