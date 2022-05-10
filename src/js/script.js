@@ -74,3 +74,12 @@ $('div.korok').on('click', (event) => {
     console.log(category)
     getData(category);
 })
+
+// What I'm trying to do
+// Instructions are on the page with button prompt, "begin quest" All the Koroks and compendium display are set to visibility:hidden;.
+// Onclick Koroks will stay hidden until clicked
+// compendium will appear.
+$('#questStart').on('click', (evt) => {
+    $('#how-to').fadeOut();
+    $('#compendiumData').css('visibility', 'visible');
+})

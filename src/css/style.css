@@ -1,12 +1,7 @@
-/* 
-$desktop: 1200px;
-$laptop: 1024px;
-$tablet: 768px;
-$phone: 480px;  */
-
 html, body {
     height: 100%;
     width: 100%;
+    font-family: 'Macondo', cursive;
 }
 * {
     box-sizing: border-box;
@@ -17,7 +12,6 @@ body {
     border: 5 px solid black;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    
 }
 
 header {
@@ -27,7 +21,10 @@ header {
     text-align:center;
     z-index: 1;
 }
-
+#title {
+    font-size: 40px;
+    text-shadow:1px 1px rgb(99, 114, 54);
+}
 main {
     position: relative;
 }
@@ -37,11 +34,27 @@ main {
     left: calc(50% - 150px);
     top: calc(50% - 150px);
     z-index: 1;
-    background: white;
+    background-color: rgba(255, 235, 205, 0.6);
+    border-radius: 5px;
     width: 300px;
-    height: 300px;
+    height: 250px;
     padding: 16px;
-    visibility: hidden;
+    visibility: visible;
+
+}
+
+#questStart {
+    display: block;
+
+    background-color: rgb(175, 147, 58);
+    color: white;
+    border-radius: 10px;
+    height:50px;
+    width: 45%;
+    border: none;
+    margin: auto;
+
+    
 }
 
 .game {
@@ -53,7 +66,6 @@ main {
     max-width: 1200px;
     margin: 16px;
 }
-
 #compendiumData {
     position:absolute;
     overflow: scroll;
@@ -63,12 +75,14 @@ main {
     border-radius: 5px;
     width:80%;
     height: 25%;
+    visibility: hidden;
     
     
 }
 #yahaha {
     text-align: center;
     font-size: 20px;
+    margin-bottom: 0;
 }
 .dataHead {
     margin:0;
@@ -142,8 +156,8 @@ main {
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: center;
-    top:;
-    left:;
+    top:0;
+    left:0;
   
 } */
 

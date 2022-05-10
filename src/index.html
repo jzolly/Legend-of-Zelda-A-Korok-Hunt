@@ -8,22 +8,21 @@
   <title>Document</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
-  <script src="./JS/script.js" defer></script>
-  <link rel="stylesheet" href="./CSS/style.css" />
+    <script src="./JS/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <h1 id="tite">Hyrulean Korok Hunt</h1>
+    <h1 id="title">Hyrulean Korok Hunt</h1>
   </header>
   <main>
     <div id="how-to">
       <h2>How to Play..</h2>
-      <p>Hunt around Hyrul to find my hidden friends. Each friend will give you some helpful insformation about the
-        monsters, equipment, creatures, materials and treasure that you will need to become the courageous hero the land
-        needs.</p>
+      <p>Hyrule is a land filled with wonder and exploration. Hidden around the map are 4 koroks. Each is an expert in a particular topic. Find them to learn more about this wonderful land of adventure!</p>
       <!-- clicking this button will trigger the korok hunt and allow the user to find the five koroks hidden in the land -->
-      <button>Begin Your Quest</button>
+      <button id="questStart">Begin Your Quest<br> Triforce</button>
     </div>
     <div class="game">
       <img src="https://switchrpg.com/images/articles/botw/botw01.jpg" />
@@ -37,7 +36,7 @@
     </div>
     <div id="compendiumData">
       <!-- play with jQuery to add category ${} to have each korok identify their data category -->
-      <h2 id="yahaha" class="dataHead">Yahahaha...you found me!  </h2>
+      <h2 id="yahaha">Yahahaha...you found me!  </h2>
       <div id="mobileFlexData">
         <h3 id="nameLabel" class="dataHead">Name:</h3>
         <p id="nameValue" class="dataHead"></p>
