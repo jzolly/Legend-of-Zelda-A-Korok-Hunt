@@ -56,12 +56,13 @@ main {
 
 #compendiumData {
     position:absolute;
-    /* right: 0;
-    bottom: 0; */
-    width: 75%;
-    margin: 0;
+    overflow: scroll;
+    left: 45px;
+    bottom: 10px;
     background-color: rgba(255, 235, 205, 0.6);
     border-radius: 5px;
+    width:80%;
+    height: 25%;
     
     
 }
@@ -70,7 +71,8 @@ main {
     font-size: 20px;
 }
 .dataHead {
-    margin: 0;
+    margin:0;
+    margin-left: 1em;
     opacity:0.75;
 }
 #thingImg {
@@ -99,11 +101,11 @@ main {
 }
 #korok2 {
     background-image:url('https://cdn.staticneo.com/w/zelda/Aldo.png');
-    background-size: 70px;
+    background-size: 75px;
     background-repeat: no-repeat;
     background-position: center;
-    top:400px;
-    left:1700px;
+    top:830px;
+    left:1400px;
 }
 #korok3 {
     background-image: url('https://cdn.staticneo.com/w/zelda/Irch.png');
@@ -118,16 +120,32 @@ main {
     background-size:100px;
     background-repeat: no-repeat;
     background-position: center;
-    top:;
-    left:;
+    top: 490px;
+    left:1560px;
 }
-#korok5 {
+/* #korok5 {
     background-image: url('https://cdn.staticneo.com/w/zelda/Rown.png');
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: center;
+} */
+.rock {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
 }
-
+/* having CORB issues with imgur */
+/* #rock1 {
+    background-image: url('https://i.imgur.com/LXQjYYK.png');
+    background-color: slategray;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top:;
+    left:;
+  
+} */
 
 @media screen and (min-width: 768px){
     html, body {
