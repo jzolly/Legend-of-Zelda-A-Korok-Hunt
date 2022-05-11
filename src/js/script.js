@@ -1,9 +1,7 @@
 
 
 // Variables
-// initial pull for MVP urlAll.  Make unique pulls for each other url after MVP.  Maybe use all for a 'you search component' after MVP and styling is done.
-// const urlAll = "https://botw-compendium.herokuapp.com/api/v2/all";
-// use these after MVP to have each korok find a specific thing
+
 const categoryUrl = "https://botw-compendium.herokuapp.com/api/v2/category/";
 
 
@@ -13,7 +11,7 @@ const korokMap = {
     'korok2': 'equipment',
     'korok3': 'materials',
     'korok4': 'treasure',
-    // 'korok5': 'creatures', this has two sub objects of edible and non-edible
+    // 'korok5': 'creatures', this has two sub objects of edible and non-edible. Haven't tackled
 }
 
 // Element Ids
@@ -79,7 +77,28 @@ $('div.korok').on('click', (event) => {
 // Instructions are on the page with button prompt, "begin quest" All the Koroks and compendium display are set to visibility:hidden;.
 // Onclick Koroks will stay hidden until clicked
 // compendium will appear.
+// EVENT LISTENERS
+
 $('#questStart').on('click', (evt) => {
-    $('#how-to').fadeOut();
-    $('#compendiumData').css('visibility', 'visible');
+    $('#how-to').fadeOut(1000);
+    $('#returnMenu').css('visibility', 'visible');
+    
+    // Below code makes compedium visible after closing out the directions.
+    // $('#compendiumData').css('visibility', 'visible').fadeOut(5000);
+})
+$('#returnMenu').on('click', (evt) => {
+    // console.log('this button works');
+    $('#questStart').html('Continue Quest');
+    $('#directions').css('margin-bottom', 0)
+    $('#directions').html('Remember, four koroks wait, hidden from sight. Click around the landscape to find them and recieve a fact about the land of Hyrule. When found, Korok will appear and shout, "yahaha!", when found.');
+    $('#how-to').fadeIn(1000);
+})
+
+
+
+
+
+$('#korok1').on('click', (evt)=> {
+    ('#korok1').css('visibility', 'visible');
+    $('#compendiumData').css('visibility' , 'visible').fadeOut(10000);
 })
