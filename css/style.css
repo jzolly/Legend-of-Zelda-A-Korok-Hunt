@@ -159,7 +159,7 @@ main {
     background-position: center;
     top: 700px;
     left: 200px;
-    visibility: visible;
+    visibility: hidden;
 }
 /* balloon */
 #korok4 {
@@ -213,9 +213,35 @@ main {
     /* background-size:200px; */
     background-repeat: no-repeat;
     background-position: center;
-    top: 0px;
-    left:0px;
+    top: 600px;
+    left: 480px;
     visibility: visible;
 }
-
+#flower2 {
+    background-color: black;
+    /* background-size:200px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 700px;
+    left: 590px;
+    visibility: hidden;
+}
+#flower3 {
+    background-color: black;
+    /* background-size:200px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 775px;
+    left: 420px;
+    visibility: hidden;
+}
+#flower4 {
+    background-color: black;
+    /* background-size:200px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 800px;
+    left: 160px;
+    visibility: hidden;
+}
 

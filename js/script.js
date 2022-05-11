@@ -69,6 +69,18 @@ $('#rock1').on('click', (evt) =>{
 // Apple and Korok2 (possible drag and drop)
 
 // Flower and Korok3
+$('#flower1').on('click', (evt) => {
+    $('#flower2').css('visibility', 'visible')
+})
+$('#flower2').on('click', (evt) => {
+    $('#flower3').css('visibility', 'visible')
+})
+$('#flower3').on('click', (evt) => {
+    $('#flower4').css('visibility', 'visible')
+})
+$('#flower4').on('click', (evt) => {
+    $('#korok3').css('visibility', 'visible').click();
+})
 
 // Display Data from API. 
 $('div.korok').on('click', (event) => {
