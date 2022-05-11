@@ -22,7 +22,7 @@ header {
 }
 #title {
     font-size: 40px;
-    text-shadow:1px 1px rgb(136, 152, 88);
+    text-shadow:1px 1px rgb(166, 184, 115);
 }
 #returnMenu {
     background-color: rgba(255, 235, 205, 0.6);
@@ -47,6 +47,7 @@ main {
     height: 250px;
     padding: 16px;
     visibility: visible;
+    z-index: 3;
 
 }
 
@@ -73,16 +74,18 @@ main {
     margin: 16px;
     border: solid black
 }
+/* centering here is weird */
 #compendiumData {
     position:absolute;
     overflow: scroll;
-    left: 45px;
+    left: 30px;
     bottom: 10px;
     background-color: rgba(255, 235, 205, 0.6);
     border-radius: 5px;
-    width:80%;
+    width:75%;
     height: 25%;
-    visibility: visible;
+    visibility: hidden;
+    z-index: 3;
     
     
 }
@@ -91,6 +94,19 @@ main {
     font-size: 20px;
     margin-bottom: 0;
 }
+#closeCompendium {
+    text-align: center;
+    margin: 0;
+}
+#closeButton {
+    background-color: rgb(175, 147, 58);
+    color: black;
+    font-family: 'Macondo', cursive;
+    border-radius: 10px;
+    border: none;
+
+}
+
 .dataHead {
     margin:0;
     margin-left: 1em;
@@ -105,12 +121,14 @@ main {
 }
 #appendImg {
     float:right;
+    width: 25%
 }
 .korok {
     position: absolute;
     width: 100px;
     height: 150px;
     top: 0;
+    z-index: 2;
     
 }
 #korok1 {
@@ -118,7 +136,7 @@ main {
     background-size:175px;
     background-repeat: no-repeat;
     background-position: center;
-    top: 705px;
+    top: 725px;
     left: 790px;
     visibility: visible;
 }
@@ -157,54 +175,33 @@ main {
     top:;
     left:;
     visibility: visible; */
-}
+/* } */
 .rock {
-    /* background-image: url('https://i.imgur.com/xjaMIKB.png'); */
-    background-color: black;
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     top: 0;
-    visibility: hidden;
+    z-index: 1;
+
 }
-/* having CORB issues with imgur */
-/* #rock1 {
-    background-image: url('https://i.imgur.com/LXQjYYK.png');
-    background-color: slategray;
-    background-size: 100px;
+#rock1 {
+    background-image: url('/Users/jessie/Gen-Assembly-Class/GA_avatar_firenation/Project/API-Project/images/Png from Procreate/rock.png');
+    /* background-color: black; */
+    background-size:400px;
     background-repeat: no-repeat;
     background-position: center;
-    top:0;
-    left:0;
+    top: 710px;
+    left:760px;
+    visibility: visible;
   
-} */
+}
 
-/* @media screen and (min-width: 768px){
-    html, body {
-
-    }
-    .korok {
-        /* width: 25%; */
-        /* margin-bottom: 0;   */
-    }
-    .mobile {
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-    #title {
-
-    }
-    #compendiumData {
-        width: 90%;
-        
-
-    }
-    #mobileFlexData {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        
-    } */
+.flower {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
 
 }
+
+

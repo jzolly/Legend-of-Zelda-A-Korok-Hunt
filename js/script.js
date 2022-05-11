@@ -51,41 +51,15 @@ function getData(category) {
     // get specific key values pairs from object; specifically: name, category, description and img.
     // push data from object to html using jQuery Element Ids
 }
-
-// This piece gets category based on the korok that was clicked
-$('div.korok').on('click', (event) => {
-    // event.preventDefault() DID
-    // Get korok's element id DID
-    const id = event.target.id;
-    console.log(id);
-
-    // I'm playing with the idea of having the compendium data appear beside the korok found.  I may just leave it at the bottom of the screen, esp for @media 
-    // Get position of korok from event target
-    // console.log(event.clientX, event.clientY);
-    // console.log(event.offset);
-    // compendiumEl.css('top', event.clientY);
-    // compendiumEl.css('left', event.clientX);
-
-    // get category based on korok
-    // this variable (below) accesses the korokMap object via id (triggered by element onclick) and gives us the valuem(category) of that korok for url.
-    const category = korokMap[id];
-    console.log(category)
-    getData(category);
-})
-
-// What I'm trying to do
-// Instructions are on the page with button prompt, "begin quest" All the Koroks and compendium display are set to visibility:hidden;.
-// Onclick Koroks will stay hidden until clicked
-// compendium will appear.
 // EVENT LISTENERS
 
+// Quest Menu Logic  
 $('#questStart').on('click', (evt) => {
     $('#how-to').fadeOut(1000);
     $('#returnMenu').css('visibility', 'visible');
     
-    // Below code makes compedium visible after closing out the directions.
-    // $('#compendiumData').css('visibility', 'visible').fadeOut(5000);
 })
+// Return 
 $('#returnMenu').on('click', (evt) => {
     // console.log('this button works');
     $('#questStart').html('Continue Quest');
@@ -94,11 +68,41 @@ $('#returnMenu').on('click', (evt) => {
     $('#how-to').fadeIn(1000);
 })
 
+// Rock and Korok1
+$('#rock1').on('click', (evt) =>
 
+)
 
+// Display Data from API. 
 
-
-$('#korok1').on('click', (evt)=> {
-    ('#korok1').css('visibility', 'visible');
-    $('#compendiumData').css('visibility' , 'visible').fadeOut(10000);
+$('div.korok').on('click', (event) => {
+    // event.preventDefault() DID
+    // Get korok's element id DID
+    const id = event.target.id;
+    console.log(id);
+    // get category based on korok
+    $('#compendiumData').fadeIn()
+    $('#compendiumData').css('visibility', 'visible');
+    // this variable (below) accesses the korokMap object via id (triggered by element onclick) and gives us the valuem(category) of that korok for url.
+    const category = korokMap[id];
+    console.log(category)
+    getData(category);
 })
+// Hide compendium
+$('#closeButton').on('click', (evt) => {
+    $('#compendiumData').fadeOut(1000);
+})
+
+
+
+
+
+
+
+// MY NOTES FOR FUTURE SELF
+  // For on click methods.  I'm playing with the idea of having the compendium data appear beside the korok found.  I may just leave it at the bottom of the screen, esp for @media 
+    // Get position of korok from event target
+    // console.log(event.clientX, event.clientY);
+    // console.log(event.offset);
+    // compendiumEl.css('top', event.clientY);
+    // compendiumEl.css('left', event.clientX);
