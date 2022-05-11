@@ -63,11 +63,10 @@ $('#returnMenu').on('click', (evt) => {
 
 // Rock and Korok1
 $('#rock1').on('click', (evt) =>{
-
+    $('#korok1').css('visibility', 'visible').click();
 })
 
 // Display Data from API. 
-
 $('div.korok').on('click', (event) => {
     // event.preventDefault() DID
     // Get korok's element id DID
@@ -85,7 +84,6 @@ $('div.korok').on('click', (event) => {
 $('#closeButton').on('click', (evt) => {
     $('#compendiumData').fadeOut(1000);
 })
-
 
 
 

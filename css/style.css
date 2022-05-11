@@ -131,6 +131,7 @@ main {
     z-index: 2;
     
 }
+/* rock */
 #korok1 {
     background-image: url('https://cdn.staticneo.com/w/zelda/Hollo.png');
     background-size:175px;
@@ -138,8 +139,9 @@ main {
     background-position: center;
     top: 725px;
     left: 790px;
-    visibility: visible;
+    visibility: hidden;
 }
+/* apple */
 #korok2 {
     background-image:url('https://cdn.staticneo.com/w/zelda/Aldo.png');
     background-size: 75px;
@@ -149,6 +151,7 @@ main {
     left:1400px;
     visibility: visible;
 }
+/* flowers */
 #korok3 {
     background-image: url('https://cdn.staticneo.com/w/zelda/Irch.png');
     background-size:px;
@@ -158,6 +161,7 @@ main {
     left: 200px;
     visibility: visible;
 }
+/* balloon */
 #korok4 {
     background-image: url('https://cdn.staticneo.com/w/zelda/Olivio.png');
     background-size:100px;
