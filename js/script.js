@@ -84,6 +84,7 @@ $('div.korok').on('click', (event) => {
     console.log(category)
     getData(category);
 })
+
 // Hide compendium
 $('#closeButton').on('click', (evt) => {
     $('#compendiumData').fadeOut(1000);

@@ -189,7 +189,8 @@ main {
 
 }
 #rock1 {
-    background-image: url('/Users/jessie/Gen-Assembly-Class/GA_avatar_firenation/Project/API-Project/images/Png from Procreate/rock.png');
+    /* background-image: url('/Users/jessie/Gen-Assembly-Class/GA_avatar_firenation/Project/API-Project/images/png-procreate/rock.png'); */
+    background-image: url('../images/png-procreate/rock.png');
     /* background-color: black; */
     background-size:400px;
     background-repeat: no-repeat;
