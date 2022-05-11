@@ -41,15 +41,8 @@ function getData(category) {
             $('#appendImg').empty();
             // $('main').append(`<img src="${data.Poster}"/>`)
             $('#appendImg').append(`<img id="thingImg" src="${randomThing.image}" alt="${randomThing.name}"></img>`)
-
-
         }
-    )
-    // form the URL with that category DID
-    // const url = categoryUrl + category;
-    // get random array element (each element is an object) from data
-    // get specific key values pairs from object; specifically: name, category, description and img.
-    // push data from object to html using jQuery Element Ids
+    ) 
 }
 // EVENT LISTENERS
 
@@ -69,9 +62,9 @@ $('#returnMenu').on('click', (evt) => {
 })
 
 // Rock and Korok1
-$('#rock1').on('click', (evt) =>
+$('#rock1').on('click', (evt) =>{
 
-)
+})
 
 // Display Data from API. 
 
