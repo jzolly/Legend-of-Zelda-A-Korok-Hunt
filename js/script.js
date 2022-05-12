@@ -70,7 +70,7 @@ $('#rock1').on('click', (evt) =>{
     $('#rock2').css('visibility', 'visible');
 })
 
-// Apple and Korok2 (possible drag and drop)
+// Apple and Korok2 (drag and drop)
 function allowDrop(event) {
     event.preventDefault();
 }
@@ -81,7 +81,7 @@ function drop(event) {
     event.preventDefault();
     const data = event.dataTransfer.getData("div");
     event.target.appendChild(document.getElementById(data));
-    $('#apple').css('left', '55px').css('top', '190px');
+    $('#apple').css('left', '145px').css('top', '310px');
     $('#korok2').css('visibility', 'visible').click();
 }
 

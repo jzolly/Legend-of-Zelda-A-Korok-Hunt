@@ -154,8 +154,8 @@ main {
     background-size: 95px;
     background-repeat: no-repeat;
     background-position: center;
-    top:900px;
-    left:1500px;
+    top:850px;
+    left:1480px;
     visibility: hidden;
 }
 /* flowers */
@@ -222,10 +222,10 @@ main {
 /* Korok 2 bottom right*/
 #apple {
     position: absolute;
-    width: 50px;
+    width: 60px;
     height: 50px;
-    background-color: rgb(97, 31, 31);
-    /* background-size:200px; */
+    background-image: url('../images/png-procreate/apple.png');
+    background-size:150px;
     background-repeat: no-repeat;
     background-position: center;
     top: 980px;
@@ -235,14 +235,15 @@ main {
 }
 #statue {
     position: absolute;
-    width: 150px;
-    height: 250px;
-    background-color: black;
-    /* background-size:200px; */
+    width: 430px;
+    height: 550px;
+    background-image: url('../images/png-procreate/statue.png');
+    background-size:500px;
     background-repeat: no-repeat;
+    overflow: auto;
     background-position: center;
-    top: 750px;
-    left: 1600px;
+    top: 650px;
+    left: 1470px;
     visibility: visible;
     z-index:1;
 }
@@ -255,17 +256,17 @@ main {
 
 }
 #flower1 {
-    background-color: black;
-    /* background-size:200px; */
+    background-image: url('../images/png-procreate/flower.png');
+    background-size:100px;
     background-repeat: no-repeat;
     background-position: center;
-    top: 580px;
-    left: 490px;
+    top: 600px;
+    left: 530px;
     visibility: visible;
 }
 #flower2 {
-    background-color: black;
-    /* background-size:200px; */
+    background-image: url('../images/png-procreate/flower.png');
+    background-size:130px;
     background-repeat: no-repeat;
     background-position: center;
     top: 710px;
@@ -273,21 +274,26 @@ main {
     visibility: hidden;
 }
 #flower3 {
-    background-color: black;
-    /* background-size:200px; */
+    background-image: url('../images/png-procreate/flower.png');
+    background-size:170px;
     background-repeat: no-repeat;
     background-position: center;
-    top: 780px;
+    top: 750px;
     left: 420px;
+    width:150px;
+    height:220px;
     visibility: hidden;
 }
 #flower4 {
-    background-color: black;
-    /* background-size:200px; */
+    background-image: url('../images/png-procreate/flower.png');
+    background-size:200px;
     background-repeat: no-repeat;
     background-position: center;
-    top: 800px;
-    left: 160px;
+    top: 780px;
+    left: 140px;
+    width:150 px;
+    height:150px;
+    overflow-x: visible;
     visibility: hidden;
 }
 /* Korok 4 mid right*/
@@ -299,11 +305,11 @@ main {
 
 }
 #pinwheel1 {
-    background-color: black;
-    /* background-size:200px; */
+    background-image: url('../images/png-procreate/pinwheel.png');
+    background-size:110px;
     background-repeat: no-repeat;
     background-position: center;
-    top: 560px;
+    top: 580px;
     left: 1570px;
     visibility: visible;
 }
@@ -315,17 +321,20 @@ main {
     visibility: hidden; 
 }
 #balloon1 {
-    background-color: black;
-    /* background-size:200px; */
+    background-image: url('../images/png-procreate/balloon.png');
+    background-size:150px;
+    width:130px;
     background-repeat: no-repeat;
     background-position: center;
     top: 350px;
     left: 1700px;
+  
     /* visibility: hidden; */
 }
 #balloon2 {
-    background-color: rgb(44, 43, 43);
-    /* background-size:200px; */
+    background-image: url('../images/png-procreate/balloon.png');
+    background-size:150px;
+    width:130px;
     background-repeat: no-repeat;
     background-position: center;
     top: 300px;
@@ -333,15 +342,16 @@ main {
     /* visibility: hidden; */
 }
 #balloon3 {
-    background-color: rgb(74, 70, 70);
-    /* background-size:200px; */
+    background-image: url('../images/png-procreate/balloon.png');
+    background-size:150px;
+    width:130px;
     background-repeat: no-repeat;
     background-position: center;
     top: 350px;
     left: 1440px;
     /* visibility: hidden; */
 }
-
+cd
 /* @media screen and (min-width: 768px){
     #compediumData {
         position: absolute;
