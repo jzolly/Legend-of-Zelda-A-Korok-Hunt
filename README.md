@@ -14,7 +14,7 @@ This interactive application is an API based **Legend of Zelda Breath of the Wil
 ![Imgur](https://i.imgur.com/uOc7NAb.png)
 ![Imgur](https://i.imgur.com/PHx3ADV.png)
 ### In the Game
-Explanations of game functionality is displayed below. For a spoiler free experience of the Hylean Korok Hunt application <span><a href="https://github.com/jzolly/Legend-of-Zelda-A-Korok-Hunt">click here</a></span>.  Otherwise continue scrolling through the screenshots, there is another link to the game toward the end.
+Explanations of game functionality is displayed below. For a spoiler free experience of the Hylean Korok Hunt application <span><a href="https://jzolly.github.io/Legend-of-Zelda-A-Korok-Hunt/">click here</a></span>.  Otherwise continue scrolling through the screenshots, there is another link to the game toward the end.
 #### How to Play-menus
 This first menu serves as the launch point for the viewer.  The game is coded so that the backbround cannot be interacted with until the user intitialized the quest.
 ![Imgur](https://i.imgur.com/GCZHIgM.png)
@@ -57,7 +57,7 @@ Korok Revealed
 ##### Rock
 ![Imgur](https://i.imgur.com/yP5dJnq.png) -->
 ## Getting Started
-Ready to play?  <span></span><a href="https://github.com/jzolly/Legend-of-Zelda-A-Korok-Hunt">Click here</a></span>!  Happy hunting!
+Ready to play?  <span></span><a href="https://jzolly.github.io/Legend-of-Zelda-A-Korok-Hunt/">Click here</a></span>!  Happy hunting!
 ## Future Enhancements
 This experience was very fun, and inspired a lot of future ideas.
 - 5th Korok- which will use the APIs creature category.
@@ -82,4 +82,4 @@ All koroks images were used from <a href="https://zelda.neoseeker.com/wiki/Korok
 ### Nintendo: Legend of Zelda Breath of the Wild
 Besides the display, original coded, and gamemap setup, all images, creatures, backgrounds and korok finding mechanics are directly borrowed from Legend of Zelda Breath of the Wild.  To continue this enjoyable experience in a much more interactive and vast openworld environment check the game out <a href="https://www.zelda.com/breath-of-the-wild/">here</a>.  
 ## Special Thanks
-I would like to give a special thanks to many people who supported me through this.  Thanks of my instructors and instructional assistants from **General Assebmly** for teaching me and supporting me through my learning process.  Thanks to my friend ***Zach*** for helping me figure out some hard logic for getting in to my API objects.  I would also like to thank my friend ***Caleb*** for giving me eyes on the code when I was solving some of my game functionality. Thanks to my friend ***Charisse*** for also giving me eyes on the code and being a source of encouragement and open invitationed support.  To all my ***coder friends*** who have sat with me in discord and put up with me complaining and harking through trouble shooting, you guys rock!  Enjoy the game.
+I would like to give a special thanks to many people who supported me through this.  Thanks of my instructors and instructional assistants from **General Assebmly** for teaching me and supporting me through my learning process.  Thanks to my friend ***Zach*** for helping me figure out some hard logic for getting in to my API objects.  I would also like to thank my friend ***Caleb*** for giving me eyes on the code when I was solving some of my game functionality. Thanks to my friend ***Charisse*** for also giving me eyes on the code and being a source of encouragement and open invitationed support.  To all my ***coder friends*** who have sat with me in person or in discord and put up with me complaining and harking through trouble shooting, you guys rock!  Enjoy the game.
