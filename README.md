@@ -42,7 +42,7 @@ Korok Revealed
 ![Imgur](https://i.imgur.com/fOObhNw.png)
 #### Customized Images
 ***Procreate*** is the technology used to color edit images to match the background and seemlessly blend with the game map. Each image was originally from **game screenshots** which were then converted into custome png files. 
-##### Statue
+<!-- ##### Statue
 ![Imgur](https://i.imgur.com/ZFtDu1k.png)
 ##### Apple
 ![Imgur](https://i.imgur.com/cIOLxGF.png)
@@ -53,7 +53,7 @@ Korok Revealed
 ##### Pinwheel
 ![Imgur](https://i.imgur.com/IfI4BCr.png)
 ##### Rock
-![Imgur](https://i.imgur.com/yP5dJnq.png)
+![Imgur](https://i.imgur.com/yP5dJnq.png) -->
 ## Getting Started
 Ready to play?  <span></span><a href="https://github.com/jzolly/Legend-of-Zelda-A-Korok-Hunt">Click here</a></span>!  Happy hunting!
 ## Future Enhancements
