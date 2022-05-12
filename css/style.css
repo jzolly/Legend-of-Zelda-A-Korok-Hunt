@@ -85,11 +85,11 @@ main {
 #compendiumData {
     position:absolute;
     overflow: scroll;
-    left: 30px;
+    left: 15%;
     bottom: 10px;
     background-color: rgba(255, 235, 205, 0.6);
     border-radius: 5px;
-    width:75%;
+    width:70%;
     height: 25%;
     visibility: hidden;
     z-index: 3;
@@ -185,8 +185,11 @@ main {
     background-position: center;
     top:;
     left:;
-    visibility: visible; */
-/* } */
+    visibility: visible;
+} */
+
+
+
 /* Korok 1 center */
 .rock {
     position: absolute;
@@ -339,38 +342,17 @@ main {
     /* visibility: hidden; */
 }
 
-
-
-/* EXPERIMENTAL BALLOON */
-/* #balloon1 {
-    background-color: black;
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 350px;
-    left: 1650px;
-    visibility: hidden;
-}
-#balloon2 {
-    background-color: rgb(44, 43, 43);
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 350px;
-    left: 1600px;
-    visibility: hidden;
-}
-#balloon3 {
-    background-color: rgb(74, 70, 70);
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 350px;
-    left: 1550px;
-    visibility: hidden;
-}
-#balloon4 {
-    background-color: rgb(109, 108, 108);
-    background-repeat: no-repeat;
-    background-position: center;
-    top: 350px;
-    left: 1500px;
-    visibility: hidden;
+/* @media screen and (min-width: 768px){
+    #compediumData {
+        position: absolute;
+        overflow: scroll;
+        left: 0;
+        bottom: 10px;
+        background-color: rgba(255, 235, 205, 0.6);
+        border-radius: 5px;
+        width:70%;
+        height: 25%;
+        visibility: hidden;
+        z-index: 3;
+    }
 } */

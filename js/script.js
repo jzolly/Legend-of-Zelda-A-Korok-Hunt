@@ -11,7 +11,8 @@ const korokMap = {
     'korok2': 'equipment',
     'korok3': 'materials',
     'korok4': 'treasure',
-    // 'korok5': 'creatures', this has two sub objects of edible and non-edible. Haven't tackled
+    // 'korok5': 'creatures', 
+//     this has two sub objects of edible and non-edible. Haven't tackled
 }
 
 // Element Ids
