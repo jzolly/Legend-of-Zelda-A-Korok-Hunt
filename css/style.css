@@ -3,6 +3,13 @@ html, body {
     width: 100%;
     font-family: 'Macondo', cursive;
 }
+#noNoNo {
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+    z-index:3;
+}
 * {
     box-sizing: border-box;
 }
@@ -47,7 +54,7 @@ main {
     height: 250px;
     padding: 16px;
     visibility: visible;
-    z-index: 3;
+    z-index: 4;
 
 }
 
@@ -137,19 +144,19 @@ main {
     background-size:175px;
     background-repeat: no-repeat;
     background-position: center;
-    top: 725px;
-    left: 790px;
+    top: 715px;
+    left:800px;
     visibility: hidden;
 }
 /* apple */
 #korok2 {
     background-image:url('https://cdn.staticneo.com/w/zelda/Aldo.png');
-    background-size: 75px;
+    background-size: 95px;
     background-repeat: no-repeat;
     background-position: center;
-    top:830px;
-    left:1400px;
-    visibility: visible;
+    top:900px;
+    left:1500px;
+    visibility: hidden;
 }
 /* flowers */
 #korok3 {
@@ -168,8 +175,8 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     top: 490px;
-    left:1560px;
-    visibility: visible;
+    left:1480px;
+    visibility: hidden;
 }
 /* #korok5 {
     background-image: url('https://cdn.staticneo.com/w/zelda/Rown.png');
@@ -180,6 +187,7 @@ main {
     left:;
     visibility: visible; */
 /* } */
+/* Korok 1 center */
 .rock {
     position: absolute;
     width: 200px;
@@ -189,18 +197,53 @@ main {
 
 }
 #rock1 {
-    /* background-image: url('/Users/jessie/Gen-Assembly-Class/GA_avatar_firenation/Project/API-Project/images/png-procreate/rock.png'); */
     background-image: url('../images/png-procreate/rock.png');
-    /* background-color: black; */
     background-size:400px;
     background-repeat: no-repeat;
     background-position: center;
     top: 710px;
     left:760px;
     visibility: visible;
-  
+    
 }
-
+#rock2 {
+    background-image: url('../images/png-procreate/rock.png');
+    background-size:400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 735px;
+    left:690px;
+    visibility: hidden;
+    
+}
+/* Korok 2 bottom right*/
+#apple {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(97, 31, 31);
+    /* background-size:200px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 980px;
+    left: 1060px;
+    visibility: visible;
+    z-index:2;
+}
+#statue {
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    background-color: black;
+    /* background-size:200px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 750px;
+    left: 1600px;
+    visibility: visible;
+    z-index:1;
+}
+/* Korok 3 left */
 .flowers {
     position: absolute;
     width: 75px;
@@ -213,8 +256,8 @@ main {
     /* background-size:200px; */
     background-repeat: no-repeat;
     background-position: center;
-    top: 600px;
-    left: 480px;
+    top: 580px;
+    left: 490px;
     visibility: visible;
 }
 #flower2 {
@@ -222,7 +265,7 @@ main {
     /* background-size:200px; */
     background-repeat: no-repeat;
     background-position: center;
-    top: 700px;
+    top: 710px;
     left: 590px;
     visibility: hidden;
 }
@@ -231,7 +274,7 @@ main {
     /* background-size:200px; */
     background-repeat: no-repeat;
     background-position: center;
-    top: 775px;
+    top: 780px;
     left: 420px;
     visibility: hidden;
 }
@@ -244,4 +287,90 @@ main {
     left: 160px;
     visibility: hidden;
 }
+/* Korok 4 mid right*/
+.pinwheel {
+    position: absolute;
+    width: 75px;
+    height: 100px;
+    top: 0;
 
+}
+#pinwheel1 {
+    background-color: black;
+    /* background-size:200px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 560px;
+    left: 1570px;
+    visibility: visible;
+}
+.balloons {
+    position: absolute;
+    width: 75px;
+    height: 100px;
+    top: 0; 
+    visibility: hidden; 
+}
+#balloon1 {
+    background-color: black;
+    /* background-size:200px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 350px;
+    left: 1700px;
+    /* visibility: hidden; */
+}
+#balloon2 {
+    background-color: rgb(44, 43, 43);
+    /* background-size:200px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 300px;
+    left: 1570px;
+    /* visibility: hidden; */
+}
+#balloon3 {
+    background-color: rgb(74, 70, 70);
+    /* background-size:200px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 350px;
+    left: 1440px;
+    /* visibility: hidden; */
+}
+
+
+
+/* EXPERIMENTAL BALLOON */
+/* #balloon1 {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 350px;
+    left: 1650px;
+    visibility: hidden;
+}
+#balloon2 {
+    background-color: rgb(44, 43, 43);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 350px;
+    left: 1600px;
+    visibility: hidden;
+}
+#balloon3 {
+    background-color: rgb(74, 70, 70);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 350px;
+    left: 1550px;
+    visibility: hidden;
+}
+#balloon4 {
+    background-color: rgb(109, 108, 108);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 350px;
+    left: 1500px;
+    visibility: hidden;
+} */

@@ -19,6 +19,7 @@
     <button id="returnMenu">Forgot how to play?</button>
   </header>
   <main>
+    <div id="noNoNo"></div>
     <div id="how-to">
       <h2>How to Play..</h2>
       <p id="directions">Hyrule is a land filled with wonder and exploration. Hidden around the map are 4 koroks. Each is an expert in a particular topic. Find them to learn more about this wonderful land of adventure!</p>
@@ -33,16 +34,19 @@
       <div id="korok4" class="korok"></div>
       <!-- <div id="korok5" class="korok"></div> -->
       <div id="rock1"  class="rock"></div>
+      <div id="rock2" class="rock"></div>
       <div id="flower1" class="flowers"></div>
       <div id="flower2" class="flowers"></div>
       <div id="flower3" class="flowers"></div>
       <div id="flower4" class="flowers"></div>
       <div id="pinwheel1" class="pinwheel"></div>
       <div id="pinwheel2" class="pinwheel"></div>
-      <div id="apple"></div>
-      <div id="statue"></div>
-      <div id="balloon1'" class="balloons"></div>
-      <div id="balloon1'" class="balloons"></div>
+      <div id="apple"  draggable="true" ondragstart="drag(event)"></div>
+      <div id="statue" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="balloon1" class="balloons"></div>
+      <div id="balloon2" class="balloons"></div>
+      <div id="balloon3" class="balloons"></div>
+      <!-- <div id="balloon4" class="balloons"></div> -->
     </div>
 
     
@@ -65,7 +69,6 @@
         <img src="" alt=""> -->
       </div>
     </div>
-
   </main>
 
 </body>

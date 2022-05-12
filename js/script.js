@@ -50,6 +50,7 @@ function getData(category) {
 $('#questStart').on('click', (evt) => {
     $('#how-to').fadeOut(1000);
     $('#returnMenu').css('visibility', 'visible');
+    $('#noNoNo').css('visibility', 'hidden');
     
 })
 // Return 
@@ -63,10 +64,25 @@ $('#returnMenu').on('click', (evt) => {
 
 // Rock and Korok1
 $('#rock1').on('click', (evt) =>{
+    $('#rock1').css('visibility', 'hidden');
     $('#korok1').css('visibility', 'visible').click();
+    $('#rock2').css('visibility', 'visible');
 })
 
 // Apple and Korok2 (possible drag and drop)
+function allowDrop(event) {
+    event.preventDefault();
+}
+function drag(event) {
+    event.dataTransfer.setData("div", event.target.id);
+}
+function drop(event) {
+    event.preventDefault();
+    const data = event.dataTransfer.getData("div");
+    event.target.appendChild(document.getElementById(data));
+    $('#apple').css('left', '55px').css('top', '190px');
+    $('#korok2').css('visibility', 'visible').click();
+}
 
 // Flower and Korok3
 $('#flower1').on('click', (evt) => {
@@ -81,6 +97,34 @@ $('#flower3').on('click', (evt) => {
 $('#flower4').on('click', (evt) => {
     $('#korok3').css('visibility', 'visible').click();
 })
+
+// Pinwheel/Twinkle Balloons and Korok 4
+$('#pinwheel1').on('click', (evt) => {
+    $('#balloon1').css('visibility', 'visible');
+    $('#balloon2').css('visibility', 'visible');
+    $('#balloon3').css('visibility', 'visible');
+    $('#balloon1').on('click', (evt) => {
+        $('#balloon1').css('visibility', 'hidden');
+        isItHidden();
+    }); 
+    $('#balloon2').on('click', (evt) => {
+        $('#balloon2').css('visibility', 'hidden');
+        isItHidden();
+    });
+    $('#balloon3').on('click', (evt) => {
+        $('#balloon3').css('visibility', 'hidden');
+        isItHidden();
+    });
+    $('#balloon1').fadeOut().fadeIn().delay(750).fadeOut().fadeIn().delay(750).fadeOut().fadeIn().delay(750).fadeOut().fadeIn().delay(750).fadeOut().fadeIn().delay(750).fadeOut().fadeIn().delay(750).fadeOut().fadeIn();
+        $('#balloon2').fadeOut().fadeIn().delay(1000).fadeOut().fadeIn().delay(1000).fadeOut().fadeIn().delay(1000).fadeOut().fadeIn().delay(1000).fadeOut().fadeIn().delay(1000).fadeOut().fadeIn().delay(1000).fadeOut().fadeIn();
+        $('#balloon3').fadeOut().fadeIn().delay(500).fadeOut().fadeIn().delay(500).fadeOut().fadeIn().delay(500).fadeOut().fadeIn().delay(500).fadeOut().fadeIn().delay(500).fadeOut().fadeIn().delay(500).fadeOut().fadeIn(); 
+    })
+
+function isItHidden () {
+    if($('#balloon1').css('visibility') == ('hidden') & $('#balloon2').css('visibility') == ('hidden') & $('#balloon3').css('visibility') == ('hidden')) {
+        $('#korok4').css('visibility', 'visible').click()
+    }
+}
 
 // Display Data from API. 
 $('div.korok').on('click', (event) => {
