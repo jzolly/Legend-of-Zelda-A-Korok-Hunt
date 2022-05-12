@@ -42,6 +42,8 @@ Korok Revealed
 ![Imgur](https://i.imgur.com/fOObhNw.png)
 #### Customized Images
 ***Procreate*** is the technology used to color edit images to match the background and seemlessly blend with the game map. Each image was originally from **game screenshots** which were then converted into custome png files. 
+##### Imgur Link to Custom png files
+<a href="https://imgur.com/a/fcUjNMi">Click here</a> to view my custom pngs and other screen shots.
 <!-- ##### Statue
 ![Imgur](https://i.imgur.com/ZFtDu1k.png)
 ##### Apple
