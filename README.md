@@ -17,13 +17,12 @@ This interactive application is an API based **Legend of Zelda Breath of the Wil
 Explanations of game functionality is displayed below. For a spoiler free experience of the Hylean Korok Hunt application <span><a href="https://jzolly.github.io/Legend-of-Zelda-A-Korok-Hunt/">click here</a></span>.  Otherwise continue scrolling through the screenshots, there is another link to the game toward the end.
 #### How to Play-menus
 This first menu serves as the launch point for the viewer.  The game is coded so that the backbround cannot be interacted with until the user intitialized the quest.
-![Imgur](https://i.imgur.com/GCZHIgM.png)
+![Imgur](https://i.imgur.com/omTRfKz.png)
 After the hunt has begun, users may need a reminder of how many koroks there are, or what they are supposed to do.  The reminder menu button, under the title, appears after the quest has begun and dispalys alternative text with a continue button.
 ![Imgur](https://i.imgur.com/pZywac4.png)
 #### Landscape
-Background design allows the user to scroll into a larger image inside of the game box.
-![Imgur](https://i.imgur.com/JOPSzXP.png)
-![Imgur](https://i.imgur.com/Q8oCzU9.png)
+Background design allows the user to scroll into a larger image inside of the game box. Blow is an expanded view.
+![Imgur](https://i.imgur.com/LiPtJBQ.png)
 #### Clues and Korok Locations
 Each korok is designed to appear only after the user has followed interactive clues. Clues are based on some of the original Breath of the Wild mechanics for finding all 900 in-game koroks (Of which I've found a little over 300).  After finding a Korok users may keep clicking them to dive deep into the API to get fact after fact within that koroks category, or click the button to keep interacting with the rest of the page.
 ##### Rock Turn: Korok-Monster Facts
