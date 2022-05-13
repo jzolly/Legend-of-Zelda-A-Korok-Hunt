@@ -25,7 +25,23 @@ header {
     left:0;
     right:0;
     text-align:center;
-    z-index: 1;
+    z-index: 4;
+}
+#myLinks {
+    /* background-color:rgba(255, 235, 205, 0.6); */
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    /* /* margin: 0; */
+    padding: 0;
+    font-size: 18x;
+    color: black;
+    text-shadow: 1px 1px rgb(166, 184, 115);
+}
+li {
+    display: inline;
 }
 #title {
     font-size: 40px;
@@ -37,6 +53,7 @@ header {
     border: none;
     font-family: 'Macondo', cursive;
     visibility: hidden;
+    z-index: 4;
 
 }
 main {
